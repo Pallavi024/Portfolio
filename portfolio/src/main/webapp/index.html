@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body onload="createMap();">
 
 <!-- NavBar Starts -->
 <section id="header">
@@ -156,7 +156,7 @@ Languages/Frameworks – HTML, CSS, JavaScript</p>
     </div>
   </section>
   <!-- Experience Ends -->
-
+<div id="map"></div>
     <!-- Achievement Begins -->
 <section id="achievements">
      <div class="achievements-header">
@@ -214,4 +214,6 @@ Languages/Frameworks – HTML, CSS, JavaScript</p>
   <!-- Footer Ends -->
 
   </body>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+  <script src="script.js"></script>
 </html>
