@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 * {
 	padding: 0;
 	margin: 0;
@@ -69,7 +68,80 @@ li {
 .section-title span {
 	color: #C70039;
 }
+.name h1 {
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: white;
+}
 
+.cta {
+	display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid #C70039;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	margin-top: 30px;
+	transition: .3s ease;
+	transition-property: background-color, color;
+}
+.cta:hover {
+	color: white;
+	background-color: #C70039;
+}
+
+/* Header Begins */
+#header {
+	position: fixed;
+	height: auto;
+    z-index: 1000;
+    left:0;
+    top:0;
+    width:100vw;
+    
+}
+
+#header .header {
+	min-height: 8vh;
+	background-color: rgba(31, 30, 30, 0.24);
+}
+
+#header .nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	max-width: 1300px;
+	padding: 0 10px;
+}
+
+#header .nav-list ul {
+	list-style: none;
+	
+}
+
+#header .nav-list li {
+	display: inline-block;
+}
+
+#header .nav-list ul a {
+	font-size: 2rem;
+	font-weight: 500;
+	letter-spacing: .2rem;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	padding: 20px;
+	display: block;
+}
+
+#header .nav-list ul li:hover a {
+	color: #C70039;
+}
+/* Header Ends */
 
 /* Intro Begins */
 #intro {
@@ -146,8 +218,16 @@ li {
 }
 /* Intro Ends */
 
-/* Projects Begins */
+/* About Begins*/
+#about .col-right .cta {
+	color: black;
+	margin-bottom: 50px;
+	padding: 10px 20px;
+	font-size: 2rem;
+}
+/* About Ends*/
 
+/* Projects Begins */
 #projects .projects {
 	flex-direction: column;
 	text-align: center;
@@ -288,6 +368,139 @@ li {
 	transform: scale(1.1);
 }
 /* Experience Ends */
+
+/* Achievements Begins */
+#achievements .achievements-header h1 {
+	margin-bottom: 50px;
+}
+
+#achievements .achievements-container {
+
+    width: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 150px;
+    
+}
+
+#achievements .achievements-card {
+    position: relative;
+    left: -6%;
+    width: 300px;
+    height: 370px;
+    transition: 0.3s ease-out;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
+}
+
+#achievements .achievements-card .imgbox {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#achievements .achievements-card .content {
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    transition: all 0.5s cubic-bezier(0.48, -0.28, 0.41. 1.4);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#achievements .achievements-card:hover .content {
+
+width: 100%;
+height: 75%;
+left:0;
+bottom: 0;
+}
+
+#achievements .achievements-card .imgbox img{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80%;
+    width: 100%;
+    display: block;
+    transition: 0.5s;
+
+}
+
+#achievements .content p {
+
+    margin:10px 0 0;
+    padding: 1em 1em;
+    transform: translateY(2em);
+    line-height: 1.3em;
+    transition: 0.3s;
+    text-align: justify;
+    opacity: 0;
+}
+
+#achievements .achievements-card:hover .content p{
+
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#achievements .content h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500px;
+    color: white;
+}
+
+#achievements .achievements-card:hover{
+
+    box-shadow: 0 0 5em rgba(0,0,0,0.4);
+}
+
+#achievements .content p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500px;
+    color: white;
+}
+/*Achievements Ends*/
+
+/* Footer Begins */
+#footer {
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+#footer .footer {
+    margin-top: 50px;
+	min-height: 200px;
+	flex-direction: column;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+#footer .social-icon {
+	display: flex;
+	margin-bottom: 30px;
+}
+#footer .social-item {
+	height: 50px;
+	width: 50px;
+	margin: 0 5px;
+}
+#footer .social-item img {
+	filter: grayscale(1);
+	transition: .3s ease filter;
+}
+#footer .social-item:hover img {
+	filter: grayscale(0);
+}
+/* Footer Ends */
 
 /* Keyframes */
 @keyframes text_reveal_box {
