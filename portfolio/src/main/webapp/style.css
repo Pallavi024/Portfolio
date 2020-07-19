@@ -472,6 +472,15 @@ bottom: 0;
 }
 /*Achievements Ends*/
 
+/*Map Begins*/
+
+#map {
+  border: thin solid black;
+  height: 500px;
+  width: 500px;
+  margin-left: 500px;
+}
+/*Map Ends*/
 /* Footer Begins */
 #footer {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
